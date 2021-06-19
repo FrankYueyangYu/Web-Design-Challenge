@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Landing Page</title>
+  <title>compare</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,52 +16,46 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Summary</a>
+              <a class="nav-link" aria-current="page" href="#index.html">Summary</a>
               <a class="nav-link" href="temp.html">Temperature</a>
               <a class="nav-link" href="humidity.html">Humidity</a>
               <a class="nav-link" href="cloud.html">Cloudiness</a>
               <a class="nav-link" href="wind.html">WindSpeed</a>
-              <a class="nav-link" href="compare.html">Comparison</a>
+              <a class="nav-link active" href="compare.html">Comparison</a>
               <a class="nav-link" href="data.html">Data</a>
             </div>
           </div>
         </div>
       </nav>
 
+      <div class="col-md-12" align="center" style="background-color: #ffffff">
+        <h4 style="color: #4AAAA5" >Comparison: Latitude vs X</h4><br>
+        <hr>
+        <h6>Click any plot to get an indepth analysis</h6>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col align-self-start">
+            <a href="cloud.html"><img src= "Resources/assets/images/Fig1.png" class="img-fluid" alt="Temperature"></a>
+          </div>
+          <div class="col align-self-end">
+            <a href="humidity.html"><img src= "Resources/assets/images/Fig2.png" class="img-fluid" alt="Humidity"></a> 
+          </div>
+        </div>
+      </div>
 
       <div class="container">
-  
         <div class="row">
-          
-          <div class="col-md-6" >
-           <h2 style="color: #4AAAA5">Summary: Latitude vs. X</h2>
-           <hr>
-            <p>
-            <img src="Resources/assets/images/Fig1.png" align="left" height="200px">
-            <br>
-            The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-            <p>
-            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+          <div class="col align-self-start">
+            <a href="temp.html"><img src= "Resources/assets/images/Fig3.png" class="img-fluid" alt="Cloudiness"></a> 
           </div>
-          <div class="col-md-1">
+          <div class="col align-self-end">
+            <a href="wind.html"><img src= "Resources/assets/images/Fig4.png" class="img-fluid" alt="WindSpeed"></a> 
           </div>
-          
-          <div class="col-md-4" align="center" >
-            <h4 style="color: #4AAAA5" >Visualizations</h4>
-            <hr>
-            <div>
-            <a href="temp.html"><img src= "Resources/assets/images/Fig1.png" class="rounded float-start" width="170px" alt="Temperature"></a> 
-            <a href="humidity.html"><img src= "Resources/assets/images/Fig2.png" class="rounded float-end" width="170px" alt="Humidity"></a> 
-            </div>
-            <div>
-            <a href="cloud.html"><img src= "Resources/assets/images/Fig3.png" class="rounded float-start" width="170px" alt="Cloudiness"></a>
-            <a href="wind.html"><img src= "Resources/assets/images/Fig4.png" class="rounded float-end" width="170px" alt="Wind Speed"></a>
-            </div>
-          </div>
-          
         </div>
-      
       </div>
+
 
 
 
